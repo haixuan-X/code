@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+}
+
+.background-image{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    /* 图片不变形铺满 */
+    object-fit: cover;
+    z-index: -2; /*放到最底层，盒子浮在图片上面*/
+}
+
+.login-box{
+    width: 400px;
+    padding: 40px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:50%;   /* 盒子的左上角，距离参照物顶部50% */
+    left:50%;  /* 盒子的左上角，距离参照物左边50% */
+    text-align: center; /* 居中 */
+}
+
+.username,.password{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit{
+    width: 100%;
+    height:42px;
+    background: #4285f4;
+    color:#fff;
+    border:none;
+    border-radius:4px;
+    font-size:16px;
+    cursor:pointer;
+}
