@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 基本语法</title>
+</head>
+
+<body>
+    <script>
+        var x; // 具有函数作用域
+        let y = 5; // 具有块级作用域
+        const PI = 3.14; // 具有块级作用域，且不可重新赋值
+        console.log(x, y, PI);
+        let name = "张三";
+        console.log(name);
+        let empty_value = null; // 空值
+        console.log(empty_value);
+
+        let age = 18;
+        if (age >= 18) {
+            console.log("成年人");
+        } else {
+            console.log("未成年人");
+        }
+
+        // if判断条件
+        // let time = 24;
+        // if (time < 12){
+        //     alert('上午好')
+        // }else if (time < 18){
+        //     alert('下午好')
+        // }else{
+        //     alert('晚上好')
+        // }
+      
+        // for循环
+        // for (let i = 0; i<=10;i++){
+        //     console.log(i)
+        // }
+
+        // while循环
+        // let count = 1
+        // while (count <= 10){
+        //     console.log(count)
+        //     count++
+        // }
+
+        // 循环关键字
+        for (var i=0;i<7;i++){
+            if (i==2){
+                continue;
+            }
+            if (i==4){
+                break;
+            }
+            console.log(i);
+        }
+    </script>
+</body>
+
+</html>
